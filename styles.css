@@ -1,0 +1,113 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: Arial, sans-serif;
+    scroll-behavior: smooth;
+}
+
+body {
+    background: #0b1120;
+    color: white;
+}
+
+header {
+    background: #17243a;
+    padding: 20px 8%;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav h2, h2 {
+    color: #38bdf8;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 20px;
+}
+
+nav a, a {
+    color: white;
+    text-decoration: none;
+}
+
+nav a:hover, a:hover {
+    color: #38bdf8;
+}
+
+section {
+    padding: 60px 10%;
+    text-align: center;
+}
+
+#home {
+    min-height: 80vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+}
+
+#home h1 {
+    font-size: 45px;
+    color: #38bdf8;
+}
+
+section h2 {
+    margin-bottom: 30px;
+    font-size: 30px;
+}
+
+section p {
+    line-height: 1.8;
+    color: #cbd5e1;
+}
+
+.card {
+    background: #17243a;
+    padding: 25px;
+    margin: 15px auto;
+    max-width: 650px;
+    border-radius: 10px;
+    border: 1px solid #263a56;
+}
+
+.card h3 {
+    color: #38bdf8;
+    margin-bottom: 10px;
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    transition: 0.3s;
+    border-color: #38bdf8;
+}
+
+footer {
+    background: #17243a;
+    padding: 20px;
+    text-align: center;
+}
+
+@media (max-width: 768px) {
+    nav {
+        flex-direction: column;
+        gap: 20px;
+    }
+
+    nav ul {
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    #home h1 {
+        font-size: 32px;
+    }
+}
